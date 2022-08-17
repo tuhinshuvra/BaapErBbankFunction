@@ -17,15 +17,15 @@
         <section class=" w-3/4 mx-auto flex">
             <div class=" bg-slate-400 w-1/3  mt-8 rounded-lg p-8 text-white mx-1 ">
                 <h2 class="text-3xl">Deposit</h2>
-                <h3 class=" text-xl">$ <span>00</span></h3>
+                <h3 class=" text-xl">$<span id="deposit">00</span></h3>
             </div>
             <div class=" bg-green-700 w-1/3  mt-8 rounded-lg p-8 text-white mx-1 ">
                 <h2 class="text-3xl">Widrow</h2>
-                <h3 class=" text-xl">$ <span>00</span></h3>
+                <h3 class=" text-xl">$<span id="widrow">00</span></h3>
             </div>
             <div class=" bg-pink-400 w-1/3  mt-8 rounded-lg p-8 text-white mx-1">
                 <h2 class="text-3xl">Balance</h2>
-                <h3 class=" text-xl">$ <span>00</span></h3>
+                <h3 class=" text-xl">$<span id="balance">00</span></h3>
             </div>
         </section>
 
@@ -33,8 +33,8 @@
             <div class=" bg-blue-400 w-1/2  mt-8 rounded-lg p-10 mx-1 ">
                 <h2 class="text-3xl text-white m-2">Please Deposit</h2>
                 <div class=" block">
-                    <input class=" block m-2 p-1 rounded-md w-2/3 text-lg " type="deposit" name="deposit" id="deposit"
-                        placeholder="Enter deposit amount">
+                    <input id="deposit_new" class=" block m-2 p-1 rounded-md w-2/3 text-lg " type="deposit"
+                        name="deposit" placeholder="Enter deposit amount">
                     <button id="deposit_btn"
                         class="m-2 px-3 py-1 rounded-md bg-blue-600 text-base  flex justify-end text-white hover:bg-amber-900">Deposit</button>
                 </div>
@@ -42,7 +42,7 @@
             <div class=" bg-red-300 w-1/2  mt-8 rounded-lg p-10 mx-1 ">
                 <h2 class="text-3xl text-white m-2">Please Widrow</h2>
                 <div class=" block">
-                    <input class=" block m-2 p-1 rounded-md w-2/3 text-lg " type="widrow" name="widrow" id="widrow"
+                    <input id="widrow_new" class=" block m-2 p-1 rounded-md w-2/3 text-lg " type="widrow" name="widrow"
                         placeholder="Enter widrow amount">
                     <button id="widrow_btn"
                         class="m-2 px-3 py-1 rounded-md bg-blue-600 text-base  flex justify-end text-white hover:bg-amber-900">Widrow</button>
@@ -52,7 +52,10 @@
 
     </main>
 
-    <script src="/js/utitities.js"></script>
+    <!-- <script src="/js/index.js"></script> -->
+    <script src="/js/utilities.js"></script>
+    <script src="/js/deposit.js"></script>
+    <script src="/js/widrow.js"></script>
 </body>
 
 </html>
